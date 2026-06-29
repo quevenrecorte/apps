@@ -109,7 +109,7 @@ header p {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+  grid-template-columns: repeat(3, minmax(110px, 140px));
   justify-content: center;
   gap: 18px;
 }
