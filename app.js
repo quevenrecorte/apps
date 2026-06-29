@@ -1,16 +1,12 @@
-function showTab(tab) {
-  document.querySelectorAll(".tab-content").forEach(el => {
-    el.classList.remove("active");
+document.querySelectorAll(".tab-btn").forEach(button => {
+  button.addEventListener("click", function () {
+    document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active"));
+
+    this.classList.add("active");
+    document.getElementById(this.dataset.tab + "-tab").classList.add("active");
   });
-
-  document.querySelectorAll(".tab-btn").forEach(el => {
-    el.classList.remove("active");
-  });
-
-  document.getElementById(tab + "-tab").classList.add("active");
-
-  event.target.classList.add("active");
-}
+});
 
 async function loadData(file, containerId, type) {
   const res = await fetch(file);
@@ -27,7 +23,11 @@ async function loadData(file, containerId, type) {
 
     if (type === "app") {
       link = item.url;
-      icon = "🌐";
+
+      if (item.name === "Lighthouse") icon = "🏠";
+      else if (item.name === "Hermes") icon = "📩";
+      else if (item.name === "Aegis") icon = "🔐";
+      else icon = "🌐";
     }
 
     if (type === "batch") {
