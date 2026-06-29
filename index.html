@@ -14,15 +14,31 @@
       <input type="text" id="search" placeholder="Search apps, batch files, links..." />
     </header>
 
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="apps">Web Apps</button>
-      <button class="tab-btn" data-tab="batch">Batch Files</button>
-      <button class="tab-btn" data-tab="links">Quick Links</button>
+    <div class="tabs-wrap">
+  <div class="tabs-row">
+    <button class="tab-btn active" data-tab="apps">Web Apps</button>
+    <button class="tab-btn" data-tab="batch">Batch Files</button>
+    <button class="tab-btn" data-tab="links">Quick Links</button>
+  </div>
+
+  <div class="tabs-row row-2">
+    <button class="tab-btn" data-tab="business">Business</button>
+    <button class="tab-btn" data-tab="server">Home Server</button>
+  </div>
+</div>
     </div>
 
     <section id="apps-tab" class="tab-content active">
       <div id="apps-list" class="grid"></div>
     </section>
+
+    <section id="business-tab" class="tab-content">
+  <div id="business-list" class="grid"></div>
+</section>
+
+<section id="server-tab" class="tab-content">
+  <div id="server-list" class="grid"></div>
+</section>
 
     <section id="batch-tab" class="tab-content">
       <div id="batch-list" class="grid"></div>

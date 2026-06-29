@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Router",
+    "url": "http://192.168.99.1"
+  },
+  {
+    "name": "PCB Sentinel",
+    "url": "http://192.168.99.213:8080"
+  },
+  {
+    "name": "AdGuard",
+    "url": "http://192.168.99.229:3000"
+  },
+  {
+    "name": "Mobility Print",
+    "url": "http://homeserver:9163"
+  }
+]

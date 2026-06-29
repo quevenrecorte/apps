@@ -30,6 +30,16 @@ async function loadData(file, containerId, type) {
       else icon = "🌐";
     }
 
+    if (type === "business") {
+  link = item.url;
+  icon = "🏢";
+}
+
+if (type === "server") {
+  link = item.url;
+  icon = "🖥️";
+}
+
     if (type === "batch") {
       link = item.file;
       icon = "📄";
@@ -39,6 +49,9 @@ async function loadData(file, containerId, type) {
       link = item.url;
       icon = "🔗";
     }
+
+    if (item.name === "Router") icon = "🌐";
+if (item.name === "AdGuard") icon = "🛡️";
 
     const anchor = document.createElement("a");
     anchor.href = link;
@@ -61,6 +74,8 @@ async function loadData(file, containerId, type) {
 loadData("data/apps.json", "apps-list", "app");
 loadData("data/batchfiles.json", "batch-list", "batch");
 loadData("data/links.json", "links-list", "link");
+loadData("data/business.json", "business-list", "business");
+loadData("data/homeserver.json", "server-list", "server");
 
 document.getElementById("search").addEventListener("input", function () {
   const value = this.value.toLowerCase();
