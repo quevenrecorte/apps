@@ -61,42 +61,34 @@ header p {
 .tabs-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.row-2 {
-  width: 66%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
 .tab-btn {
   width: 100%;
-  height: 38px;
-  padding: 8px;
+  height: 33px;
   border: none;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.14);
-  color: #f5d0fe;
+  border-radius: 999px;
+  background: rgba(76, 29, 149, 0.95);
+  color: #d8b4fe;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 0.85rem;
-  line-height: 1.15;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: 700;
+  font-size: 0.82rem;
   transition: all 0.3s ease;
-  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #c084fc, #9333ea);
+  background: linear-gradient(135deg, #d8b4fe, #9333ea);
   color: white;
-  box-shadow: 0 8px 20px rgba(168,85,247,0.35);
+  box-shadow:
+  0 6px 18px rgba(168,85,247,0.45),
+  0 0 12px rgba(192,132,252,0.22);
 }
 
 .tab-content {

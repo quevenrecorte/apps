@@ -50,8 +50,13 @@ if (type === "server") {
       icon = "🔗";
     }
 
+    if (type === "others") {
+    link = item.url;
+    icon = "📦";
+}
+
     if (item.name === "Router") icon = "🌐";
-if (item.name === "AdGuard") icon = "🛡️";
+    if (item.name === "AdGuard") icon = "🛡️";
 
     const anchor = document.createElement("a");
     anchor.href = link;
@@ -76,6 +81,7 @@ loadData("data/batchfiles.json", "batch-list", "batch");
 loadData("data/links.json", "links-list", "link");
 loadData("data/business.json", "business-list", "business");
 loadData("data/homeserver.json", "server-list", "server");
+loadData("data/others.json", "others-list", "others");
 
 document.getElementById("search").addEventListener("input", function () {
   const value = this.value.toLowerCase();
