@@ -1,10 +1,10 @@
 [
   {
     "name": "PCB Sentinel exe",
-    "file": "batch/run pcb sentinel"
+    "file": "batch/run pcb sentinel.bat"
   },
   {
     "name": "Armbian Orange Pi SSH",
-    "file": "batch/orangepi-armbian"
+    "file": "batch/orangepi-armbian.bat"
   }
 ]
