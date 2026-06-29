@@ -5,76 +5,115 @@
 }
 
 body {
-  background: #0f172a;
-  color: white;
+  background: linear-gradient(180deg, #f8fffb 0%, #e8f8ef 100%);
+  color: #1f2937;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 20px 12px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 500px;
   margin: auto;
 }
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #38bdf8;
+  font-size: 2.3rem;
+  color: #16a34a;
+  font-weight: bold;
 }
 
 header p {
-  color: #94a3b8;
   margin-top: 8px;
+  color: #6b7280;
+  font-size: 0.95rem;
 }
 
 #search {
-  margin-top: 20px;
+  margin-top: 18px;
   width: 100%;
-  max-width: 500px;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 14px 18px;
+  border-radius: 20px;
   border: none;
   outline: none;
   font-size: 1rem;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-section {
-  margin-bottom: 40px;
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
 }
 
-section h2 {
-  margin-bottom: 15px;
-  color: #38bdf8;
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  color: #15803d;
+}
+
+.tab-btn.active {
+  background: #16a34a;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
 
 .card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 15px;
-  transition: 0.3s;
-  cursor: pointer;
-  text-align: center;
+  background: white;
+  border-radius: 22px;
+  aspect-ratio: 1/1;
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.12);
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background: #334155;
+  transform: translateY(-4px);
 }
 
 .card a {
-  color: white;
+  width: 100%;
+  height: 100%;
+  color: #1f2937;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+}
+
+.icon {
+  font-size: 1.7rem;
+}
+
+.card h3 {
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .hidden {

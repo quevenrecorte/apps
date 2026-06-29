@@ -1,3 +1,17 @@
+function showTab(tab) {
+  document.querySelectorAll(".tab-content").forEach(el => {
+    el.classList.remove("active");
+  });
+
+  document.querySelectorAll(".tab-btn").forEach(el => {
+    el.classList.remove("active");
+  });
+
+  document.getElementById(tab + "-tab").classList.add("active");
+
+  event.target.classList.add("active");
+}
+
 async function loadData(file, containerId, type) {
   const res = await fetch(file);
   const data = await res.json();
@@ -9,19 +23,37 @@ async function loadData(file, containerId, type) {
     card.dataset.name = item.name.toLowerCase();
 
     let link = "";
+    let icon = "📦";
 
-    if (type === "app" || type === "link") {
+    if (type === "app") {
       link = item.url;
-    } else if (type === "batch") {
-      link = item.file;
+      icon = "🌐";
     }
 
-    card.innerHTML = `
-      <a href="${link}" target="_blank" download>
-        <h3>${item.name}</h3>
-      </a>
+    if (type === "batch") {
+      link = item.file;
+      icon = "📄";
+    }
+
+    if (type === "link") {
+      link = item.url;
+      icon = "🔗";
+    }
+
+    const anchor = document.createElement("a");
+    anchor.href = link;
+    anchor.target = "_blank";
+
+    if (type === "batch") {
+      anchor.setAttribute("download", "");
+    }
+
+    anchor.innerHTML = `
+      <div class="icon">${icon}</div>
+      <h3>${item.name}</h3>
     `;
 
+    card.appendChild(anchor);
     container.appendChild(card);
   });
 }

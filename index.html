@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Queven Apps Hub</title>
+  <title>Apps</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Queven Apps Hub</h1>
+      <h1>Apps</h1>
       <p>Personal Dashboard / Launcher</p>
       <input type="text" id="search" placeholder="Search apps, batch files, links..." />
     </header>
 
-    <section>
-      <h2>🌐 Web Apps</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('apps')">Web Apps</button>
+      <button class="tab-btn" onclick="showTab('batch')">Batch Files</button>
+      <button class="tab-btn" onclick="showTab('links')">Quick Links</button>
+    </div>
+
+    <section id="apps-tab" class="tab-content active">
       <div id="apps-list" class="grid"></div>
     </section>
 
-    <section>
-      <h2>📄 Batch Files</h2>
+    <section id="batch-tab" class="tab-content">
       <div id="batch-list" class="grid"></div>
     </section>
 
-    <section>
-      <h2>🔗 Quick Links</h2>
+    <section id="links-tab" class="tab-content">
       <div id="links-list" class="grid"></div>
     </section>
   </div>
