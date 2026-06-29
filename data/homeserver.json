@@ -15,4 +15,15 @@
     "name": "Mobility Print",
     "url": "http://homeserver:9163"
   }
+  ,
+  {
+    "name": "Files",
+    "url": "file://homeserver/shared%20files/"
+  }
+  ,
+  {
+    "name": "Movies",
+    "url": "file://homeserver/home%20server%20storage/Movies"
+  }
+  
 ]
