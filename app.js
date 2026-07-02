@@ -57,6 +57,7 @@ if (type === "server") {
 
     if (item.name === "Router") icon = "🌐";
     if (item.name === "AdGuard") icon = "🛡️";
+    if (item.name === "Mobility Print") icon = "🖨️";
 
     const anchor = document.createElement("a");
     anchor.href = link;
