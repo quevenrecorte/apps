@@ -52,7 +52,7 @@ if (type === "server") {
 
     if (type === "others") {
     link = item.url;
-    icon = "📦";
+    icon = "🌐";
 }
 
     if (item.name === "Router") icon = "🌐";

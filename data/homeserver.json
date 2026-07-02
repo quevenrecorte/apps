@@ -5,7 +5,7 @@
   },
   {
     "name": "PCB Sentinel",
-    "url": "http://homeserver:8080"
+    "url": "http://192.168.99.213:8080"
   },
   {
     "name": "AdGuard",

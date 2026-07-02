@@ -1,10 +1,9 @@
 [
   {
-    "name": "YouTube",
-    "url": "https://youtube.com"
+    "name": "PCB Sentinel Remote",
+    "url": "https://homeserver:8080"
   },
   {
-    "name": "Notion",
-    "url": "https://notion.so"
+   
   }
 ]
