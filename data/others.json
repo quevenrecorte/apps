@@ -10,5 +10,9 @@
   {
     "name": "GameServer Remote",
     "url": "https://remotedesktop.google.com/u/1/access/session/eb477aed-d805-2925-2b0a-4a7e815573eb"
+  },
+  {
+    "name": "AdminServer Remote",
+    "url": "https://remotedesktop.google.com/u/1/access/session/51a14363-2a8e-0a5f-6f7c-4c65378d47ce"
   }
 ]
