@@ -1,7 +1,7 @@
 [
   {
     "name": "PCB Sentinel Remote",
-    "url": "https://homeserver:8080"
+    "url": "http://homeserver:8080"
   },
   {
    
