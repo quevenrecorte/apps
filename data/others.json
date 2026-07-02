@@ -6,5 +6,9 @@
   {
     "name": "HomeServer Remote",
     "url": "https://remotedesktop.google.com/u/1/access/session/d8ad40ee-6245-1bff-60ae-319634354195"
+  },
+  {
+    "name": "GameServer Remote",
+    "url": "https://remotedesktop.google.com/u/1/access/session/eb477aed-d805-2925-2b0a-4a7e815573eb"
   }
 ]
