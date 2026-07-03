@@ -24,7 +24,7 @@
   }
   ,
   {
-    "name": "BlockChromeExtensions",
+    "name": "Block ChromeExtensions",
     "file": "batch/BlockChromeExtensionsbat"
   }
   ,
@@ -55,7 +55,7 @@
 
   ,
   {
-    "name": "UnblockChromeExtensions",
+    "name": "Unblock ChromeExtensions",
     "file": "batch/UnblockChromeExtensions.bat"
   }
 
