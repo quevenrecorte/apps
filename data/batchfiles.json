@@ -7,4 +7,56 @@
     "name": "Armbian Orange Pi SSH",
     "file": "batch/orangepi-armbian.bat"
   }
+  ,
+  {
+    "name": "10 Secs Delay App Starter",
+    "file": "batch/10 Secs Delay App Starter.bat"
+  }
+  ,
+  {
+    "name": "120 Secs Delay App Starter",
+    "file": "batch/120 Secs Delay App Starter.bat"
+  }
+  ,
+  {
+    "name": "Auto Update Games",
+    "file": "batch/Auto Update Games.bat"
+  }
+  ,
+  {
+    "name": "BlockChromeExtensions",
+    "file": "batch/BlockChromeExtensionsbat"
+  }
+  ,
+  {
+    "name": "Delete Old Files",
+    "file": "batch/Delete Old Files.bat"
+  }
+  ,
+  {
+    "name": "InstallPrintLogger",
+    "file": "batch/InstallPrintLogger.bat"
+  }
+  ,
+  {
+    "name": "MinimizeAll apps",
+    "file": "batch/MinimizeAll apps.bat"
+  }
+  ,
+  {
+    "name": "run pcb sentinel organizer",
+    "file": "batch/run pcb sentinel organizer.bat"
+  }
+  ,
+  {
+    "name": "Setup Daily Sleep Wake",
+    "file": "batch/Setup Daily Sleep Wake.bat"
+  }
+
+  ,
+  {
+    "name": "UnblockChromeExtensions",
+    "file": "batch/UnblockChromeExtensions.bat"
+  }
+
 ]
