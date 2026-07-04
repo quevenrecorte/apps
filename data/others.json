@@ -15,4 +15,14 @@
     "name": "AdminServer",
     "url": "https://remotedesktop.google.com/u/1/access/session/51a14363-2a8e-0a5f-6f7c-4c65378d47ce"
   }
+  ,
+  {
+    "name": "Nathan PC",
+    "url": "http://nathan:4000"
+  }
+  ,
+  {
+    "name": "Elon PC",
+    "url": "http://elon:4000"
+  }
 ]
