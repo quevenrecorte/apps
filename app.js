@@ -27,6 +27,7 @@ async function loadData(file, containerId, type) {
       if (item.name === "Lighthouse") icon = "🏠";
       else if (item.name === "Hermes") icon = "📩";
       else if (item.name === "Aegis") icon = "🔐";
+      else if (item.name === "Agentic") icon = "🤖";
       else icon = "🌐";
     }
 
