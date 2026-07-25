@@ -37,6 +37,6 @@
   },
   {
     "name": "Site Test",
-    "url": "http://homeserver:5500"
+    "url": "http://mainworkstation:5500"
   }
 ]
