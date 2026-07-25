@@ -34,5 +34,9 @@
   {
     "name": "[Seer] HomeServer",
     "url": "http://homeserver:4000"
+  },
+  {
+    "name": "Site Test",
+    "url": "http://homeserver:5500"
   }
 ]
