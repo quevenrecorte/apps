@@ -14,5 +14,9 @@
   {
     "name": "Agentic",
     "url": "https://quevenrecorte.github.io/agentic"
+  },
+  {
+    "name": "SeerLink",
+    "url": "https://seerlink.vercel.app/"
   }
 ]
