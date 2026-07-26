@@ -20,6 +20,7 @@ const SERVER_ICONS = {
   'AdGuard':        { icon: '🛡️', label: 'DNS'  },
   'Mobility Print': { icon: '🖨️', label: 'PRNT' },
   'PCB Sentinel':   { icon: '🖥️', label: 'SYS'  },
+  'Echo':   { icon: '🗃️', label: 'SYNC'  },
 };
 
 const TYPE_CONFIG = {
@@ -179,6 +180,7 @@ function buildCard(item, type, index) {
   if (type === 'others') {
     if (item.name.startsWith('[Remote]')) { icon = '🖥️'; badgeLabel = 'RDC'; }
     else if (item.name.startsWith('[Seer]'))  { icon = '👁️'; badgeLabel = 'SEER'; }
+    else if (item.name.startsWith('[Echo]'))  { icon = '🗃️'; badgeLabel = 'SYNC'; }
     else if (item.name === 'PCB Sentinel')    { icon = '🖥️'; badgeLabel = 'SYS'; }
     else if (item.name === 'Site Test')       { icon = '🧪'; badgeLabel = 'DEV'; }
   }
@@ -209,6 +211,7 @@ function buildCard(item, type, index) {
   // Display name — strip [prefix] for cleaner look
   const displayName = item.name
     .replace(/^\[Remote\]\s*/, '')
+    .replace(/^\[Echo\]\s*/, '')
     .replace(/^\[Seer\]\s*/, '');
 
   anchor.innerHTML = `

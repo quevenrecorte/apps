@@ -38,5 +38,9 @@
   {
     "name": "Site Test",
     "url": "http://mainworkstation:5500"
+  },
+  {
+    "name": "[Echo] AdminServer",
+    "url": "http://adminserver:1000"
   }
 ]
