@@ -20,6 +20,10 @@
     "url": "https://seerlink.vercel.app/"
   },
   {
+    "name": "qDeskio",
+    "url": "https://qdeskio.vercel.app/"
+  },
+  {
     "name": "qKiosk POS",
     "url": "https://qkioskpos.vercel.app/"
   }

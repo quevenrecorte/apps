@@ -14,6 +14,7 @@ const APP_ICONS = {
   'Agentic':        { icon: '🤖', label: 'AI'   },
   'SeerLink':       { icon: '📱', label: 'MOB'  },
   'qKiosk POS':       { icon: '🛒', label: 'BMS'  },
+  'qDeskio':       { icon: '📋', label: 'PMS'  },
 };
 
 const SERVER_ICONS = {
