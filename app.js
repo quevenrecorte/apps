@@ -13,6 +13,7 @@ const APP_ICONS = {
   'Aegis':          { icon: '🔐', label: 'SEC'  },
   'Agentic':        { icon: '🤖', label: 'AI'   },
   'SeerLink':       { icon: '📱', label: 'MOB'  },
+  'qKiosk POS':       { icon: '🛒', label: 'BMS'  },
 };
 
 const SERVER_ICONS = {

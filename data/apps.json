@@ -18,5 +18,9 @@
   {
     "name": "SeerLink",
     "url": "https://seerlink.vercel.app/"
+  },
+  {
+    "name": "qKiosk POS",
+    "url": "https://qkioskpos.vercel.app/"
   }
 ]
