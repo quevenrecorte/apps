@@ -26,22 +26,26 @@ const SERVER_ICONS = {
 };
 
 const TYPE_CONFIG = {
-  app:      { iconBg: 'icon-bg-app',      badge: 'badge-app',      badgeLabel: 'APP',   defaultIcon: '🌐' },
-  business: { iconBg: 'icon-bg-business', badge: 'badge-business', badgeLabel: 'BIZ',   defaultIcon: '🏢' },
-  server:   { iconBg: 'icon-bg-server',   badge: 'badge-server',   badgeLabel: 'SRV',   defaultIcon: '🖥️' },
-  batch:    { iconBg: 'icon-bg-batch',     badge: 'badge-batch',    badgeLabel: 'BAT',   defaultIcon: '⚡' },
-  link:     { iconBg: 'icon-bg-link',      badge: 'badge-link',     badgeLabel: 'URL',   defaultIcon: '🔗' },
-  others:   { iconBg: 'icon-bg-others',    badge: 'badge-others',   badgeLabel: 'ACC',   defaultIcon: '⚙️' },
+  app:          { iconBg: 'icon-bg-app',          badge: 'badge-app',          badgeLabel: 'APP',   defaultIcon: '🌐' },
+  business:     { iconBg: 'icon-bg-business',     badge: 'badge-business',     badgeLabel: 'BIZ',   defaultIcon: '🏢' },
+  server:       { iconBg: 'icon-bg-server',       badge: 'badge-server',       badgeLabel: 'SRV',   defaultIcon: '🖥️' },
+  batch:        { iconBg: 'icon-bg-batch',        badge: 'badge-batch',        badgeLabel: 'BAT',   defaultIcon: '⚡' },
+  link:         { iconBg: 'icon-bg-link',         badge: 'badge-link',         badgeLabel: 'URL',   defaultIcon: '🔗' },
+  access:       { iconBg: 'icon-bg-access',       badge: 'badge-access',       badgeLabel: 'ACC',   defaultIcon: '⚙️' },
+  localwebapp:  { iconBg: 'icon-bg-localwebapp',  badge: 'badge-localwebapp',  badgeLabel: 'LWA',   defaultIcon: '🖥️' },
+  localhost:    { iconBg: 'icon-bg-localhost',    badge: 'badge-localhost',    badgeLabel: 'DEV',   defaultIcon: '💻' },
 };
 
 // ── Tab path map ───────────────────────────────────────────────────────────
 const TAB_PATHS = {
-  apps:     '~/apps',
-  business: '~/business',
-  server:   '~/server',
-  batch:    '~/scripts',
-  links:    '~/links',
-  others:   '~/access',
+  apps:         '~/apps',
+  business:     '~/business',
+  server:       '~/server',
+  batch:        '~/scripts',
+  links:        '~/links',
+  access:       '~/access',
+  localwebapps: '~/local-apps',
+  localhosts:   '~/localhosts',
 };
 
 // ── State ─────────────────────────────────────────────────────────────────
@@ -178,13 +182,28 @@ function buildCard(item, type, index) {
     badgeLabel = m.label;
   }
 
-  // Detect [Remote] and [Seer] prefixes for others
-  if (type === 'others') {
+  // Detect [Remote] and [Seer] prefixes for access tab
+  if (type === 'access') {
     if (item.name.startsWith('[Remote]')) { icon = '🖥️'; badgeLabel = 'RDC'; }
     else if (item.name.startsWith('[Seer]'))  { icon = '👁️'; badgeLabel = 'SEER'; }
     else if (item.name.startsWith('[Echo]'))  { icon = '🗃️'; badgeLabel = 'SYNC'; }
     else if (item.name === 'PCB Sentinel')    { icon = '🖥️'; badgeLabel = 'SYS'; }
     else if (item.name === 'Site Test')       { icon = '🧪'; badgeLabel = 'DEV'; }
+  }
+
+  // Detect port-based entries for localwebapps
+  if (type === 'localwebapp') {
+    icon = '🖥️';
+    badgeLabel = 'LWA';
+  }
+
+  // Detect port-based entries for localhosts — show port as badge if parseable
+  if (type === 'localhost') {
+    icon = '💻';
+    try {
+      const port = new URL(item.url).port;
+      if (port) badgeLabel = ':' + port;
+    } catch (_) {}
   }
 
   if (type === 'business') {
@@ -249,12 +268,14 @@ async function loadData(file, containerId, type) {
 
 // ── Load all data ─────────────────────────────────────────────────────────
 Promise.all([
-  loadData('data/apps.json',       'apps-list',     'app'),
-  loadData('data/business.json',   'business-list', 'business'),
-  loadData('data/homeserver.json', 'server-list',   'server'),
-  loadData('data/batchfiles.json', 'batch-list',    'batch'),
-  loadData('data/links.json',      'links-list',    'link'),
-  loadData('data/others.json',     'others-list',   'others'),
+  loadData('data/apps.json',          'apps-list',          'app'),
+  loadData('data/business.json',      'business-list',      'business'),
+  loadData('data/homeserver.json',    'server-list',        'server'),
+  loadData('data/batchfiles.json',    'batch-list',         'batch'),
+  loadData('data/links.json',         'links-list',         'link'),
+  loadData('data/access.json',        'access-list',        'access'),
+  loadData('data/localwebapps.json',  'localwebapps-list',  'localwebapp'),
+  loadData('data/localhosts.json',    'localhosts-list',    'localhost'),
 ]).then(updateCount);
 
 // ── Search ────────────────────────────────────────────────────────────────

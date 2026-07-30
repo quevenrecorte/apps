@@ -42,5 +42,9 @@
   {
     "name": "[Echo] AdminServer",
     "url": "http://adminserver:1000"
+  },
+  {
+    "name": "[Echo] Mainworkstation",
+    "url": "http://mainworkstation:1000"
   }
 ]

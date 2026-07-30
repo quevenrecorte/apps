@@ -277,7 +277,7 @@ body {
    ───────────────────────────────────────────── */
 .tabs-nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 6px;
   margin-bottom: 8px;
 }
@@ -299,6 +299,13 @@ body {
   cursor: pointer;
   transition: all var(--transition);
   white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Text label inside each tab button — hidden on very small screens */
+.tab-btn .tab-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tab-icon {
@@ -320,6 +327,41 @@ body {
   border-color: rgba(0,255,180,0.4);
   background: rgba(0,255,180,0.07);
   box-shadow: 0 0 12px rgba(0,255,180,0.12), inset 0 1px 0 rgba(0,255,180,0.08);
+}
+
+/* ── Responsive: medium-small phones (< 500px) ── */
+@media (max-width: 499px) {
+  .tabs-nav {
+    gap: 5px;
+  }
+  .tab-btn {
+    font-size: 9.5px;
+    padding: 8px 4px;
+    gap: 4px;
+    letter-spacing: 0;
+  }
+  .tab-icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* ── Responsive: very small phones (< 400px) — icon only ── */
+@media (max-width: 399px) {
+  .tabs-nav {
+    gap: 4px;
+  }
+  .tab-btn {
+    padding: 10px 6px;
+    gap: 0;
+  }
+  .tab-btn .tab-label {
+    display: none;
+  }
+  .tab-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /* ── Tab meta bar ── */
@@ -491,20 +533,24 @@ body {
 }
 
 /* Icon backgrounds by type */
-.icon-bg-app     { background: rgba(0,255,180,0.10); }
-.icon-bg-business{ background: rgba(251,146,60,0.12); }
-.icon-bg-server  { background: rgba(34,211,238,0.10); }
-.icon-bg-batch   { background: rgba(167,139,250,0.12); }
-.icon-bg-link    { background: rgba(248,113,113,0.10); }
-.icon-bg-others  { background: rgba(74,222,128,0.10); }
+.icon-bg-app         { background: rgba(0,255,180,0.10); }
+.icon-bg-business    { background: rgba(251,146,60,0.12); }
+.icon-bg-server      { background: rgba(34,211,238,0.10); }
+.icon-bg-batch       { background: rgba(167,139,250,0.12); }
+.icon-bg-link        { background: rgba(248,113,113,0.10); }
+.icon-bg-access      { background: rgba(74,222,128,0.10); }
+.icon-bg-localwebapp { background: rgba(250,204,21,0.10); }
+.icon-bg-localhost   { background: rgba(56,189,248,0.10); }
 
 /* Badge colors */
-.badge-app      { background: rgba(0,255,180,0.1);    color: var(--accent); }
-.badge-business { background: rgba(251,146,60,0.12);  color: var(--orange); }
-.badge-server   { background: rgba(34,211,238,0.10);  color: var(--cyan);   }
-.badge-batch    { background: rgba(167,139,250,0.12); color: var(--purple); }
-.badge-link     { background: rgba(248,113,113,0.10); color: var(--red);    }
-.badge-others   { background: rgba(74,222,128,0.10);  color: var(--green);  }
+.badge-app         { background: rgba(0,255,180,0.1);    color: var(--accent); }
+.badge-business    { background: rgba(251,146,60,0.12);  color: var(--orange); }
+.badge-server      { background: rgba(34,211,238,0.10);  color: var(--cyan);   }
+.badge-batch       { background: rgba(167,139,250,0.12); color: var(--purple); }
+.badge-link        { background: rgba(248,113,113,0.10); color: var(--red);    }
+.badge-access      { background: rgba(74,222,128,0.10);  color: var(--green);  }
+.badge-localwebapp { background: rgba(250,204,21,0.12);  color: #facc15;       }
+.badge-localhost   { background: rgba(56,189,248,0.10);  color: #38bdf8;       }
 
 /* ── Hidden / Empty State ── */
 .hidden { display: none !important; }

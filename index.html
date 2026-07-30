@@ -55,27 +55,35 @@
     <nav class="tabs-nav" role="tablist">
       <button class="tab-btn active" data-tab="apps" role="tab" aria-selected="true" id="tab-apps">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        Web Apps
+        <span class="tab-label">Web Apps</span>
       </button>
       <button class="tab-btn" data-tab="business" role="tab" aria-selected="false" id="tab-business">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Business
+        <span class="tab-label">Business</span>
       </button>
       <button class="tab-btn" data-tab="server" role="tab" aria-selected="false" id="tab-server">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-        Home Server
+        <span class="tab-label">Home Server</span>
       </button>
       <button class="tab-btn" data-tab="batch" role="tab" aria-selected="false" id="tab-batch">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-        Batch Files
+        <span class="tab-label">Batch Files</span>
       </button>
       <button class="tab-btn" data-tab="links" role="tab" aria-selected="false" id="tab-links">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-        Quick Links
+        <span class="tab-label">Quick Links</span>
       </button>
-      <button class="tab-btn" data-tab="others" role="tab" aria-selected="false" id="tab-others">
+      <button class="tab-btn" data-tab="access" role="tab" aria-selected="false" id="tab-access">
         <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
-        Access
+        <span class="tab-label">Access</span>
+      </button>
+      <button class="tab-btn" data-tab="localwebapps" role="tab" aria-selected="false" id="tab-localwebapps">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <span class="tab-label">Local Apps</span>
+      </button>
+      <button class="tab-btn" data-tab="localhosts" role="tab" aria-selected="false" id="tab-localhosts">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m9 9-3 3 3 3"/><path d="m15 9 3 3-3 3"/></svg>
+        <span class="tab-label">Localhosts</span>
       </button>
     </nav>
 
@@ -92,7 +100,9 @@
       <section id="server-tab"   class="tab-content"        role="tabpanel"><div id="server-list"   class="grid"></div></section>
       <section id="batch-tab"    class="tab-content"        role="tabpanel"><div id="batch-list"    class="grid"></div></section>
       <section id="links-tab"    class="tab-content"        role="tabpanel"><div id="links-list"    class="grid"></div></section>
-      <section id="others-tab"   class="tab-content"        role="tabpanel"><div id="others-list"   class="grid"></div></section>
+      <section id="access-tab"       class="tab-content" role="tabpanel"><div id="access-list"       class="grid"></div></section>
+      <section id="localwebapps-tab"  class="tab-content" role="tabpanel"><div id="localwebapps-list"  class="grid"></div></section>
+      <section id="localhosts-tab"    class="tab-content" role="tabpanel"><div id="localhosts-list"    class="grid"></div></section>
 
       <!-- Empty state -->
       <div id="empty-state" class="empty-state hidden">

@@ -14,12 +14,6 @@
   {
     "name": "Mobility Print",
     "url": "http://homeserver:9163"
-  },
-  {
-    "name": "Echo",
-    "url": "http://192.168.99.89:1000"
   }
-  
-  
   
 ]
