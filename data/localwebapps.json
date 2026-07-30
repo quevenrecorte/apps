@@ -1,14 +1,14 @@
 [
   {
-    "name": "PCB Sentinel",
+    "name": "PCB Sentinel (Automated Hardware File Intelligence)",
     "url": "http://localhost:"
   },
   {
-    "name": "Echo",
+    "name": "Echo (Smart pair-based, versioned file backup) ",
     "url": "http://localhost:"
   },
   {
-    "name": "Seer Monitor",
+    "name": "Seer Monitor (PC stats and controls dashboard)",
     "url": "http://localhost:"
   }
 ]
