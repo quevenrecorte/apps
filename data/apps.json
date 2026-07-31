@@ -26,5 +26,9 @@
   {
     "name": "qKiosk POS",
     "url": "https://qkioskpos.vercel.app/"
+  },
+  {
+    "name": "qFix",
+    "url": "https://qfixtracking.vercel.app/"
   }
 ]

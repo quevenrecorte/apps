@@ -15,6 +15,7 @@ const APP_ICONS = {
   'SeerLink':       { icon: '📱', label: 'MOB'  },
   'qKiosk POS':       { icon: '🛒', label: 'BMS'  },
   'qDeskio':       { icon: '📋', label: 'PMS'  },
+  'qFix':       { icon: '🔧', label: 'REP'  },
 };
 
 const SERVER_ICONS = {
