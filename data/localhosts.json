@@ -12,5 +12,10 @@
   
     "name": "VScode Live",
     "url": "http://localhost:5500"
+  },
+  {
+  
+    "name": "node.js live",
+    "url": "http://192.168.99.166:5173/"
   }
 ]
