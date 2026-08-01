@@ -18,7 +18,13 @@
   {
     "name": "SeerLink",
     "url": "https://seerlink.vercel.app/"
-  },
+  }
+  ,
+  {
+    "name": "qSpend",
+    "url": "https://qspendfinance.vercel.app/"
+  }
+  ,
   {
     "name": "qDeskio",
     "url": "https://qdeskio.vercel.app/"

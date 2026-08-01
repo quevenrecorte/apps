@@ -16,6 +16,7 @@ const APP_ICONS = {
   'qKiosk POS':       { icon: '🛒', label: 'BMS'  },
   'qDeskio':       { icon: '📋', label: 'PMS'  },
   'qFix':       { icon: '🔧', label: 'REP'  },
+  'qSpend':       { icon: '💵', label: 'FIN'  },
 };
 
 const SERVER_ICONS = {
