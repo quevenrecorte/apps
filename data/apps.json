@@ -1,13 +1,5 @@
 [
   {
-    "name": "Lighthouse",
-    "url": "https://quevenrecorte.github.io/lighthouse"
-  },
-  {
-    "name": "Hermes",
-    "url": "https://quevenrecorte.github.io/hermes"
-  },
-  {
     "name": "Aegis",
     "url": "https://aegispassword.vercel.app/"
   },
@@ -30,11 +22,20 @@
     "url": "https://qdeskio.vercel.app/"
   },
   {
+    "name": "qFix",
+    "url": "https://qfixtracking.vercel.app/"
+  
+  },
+  {
     "name": "qKiosk POS",
     "url": "https://qkioskpos.vercel.app/"
   },
   {
-    "name": "qFix",
-    "url": "https://qfixtracking.vercel.app/"
+    "name": "Lighthouse",
+    "url": "https://quevenrecorte.github.io/lighthouse"
+  },
+  {
+    "name": "Hermes",
+    "url": "https://quevenrecorte.github.io/hermes"
   }
 ]
