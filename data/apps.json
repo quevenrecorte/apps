@@ -20,26 +20,36 @@
   {
     "name": "qDeskio",
     "url": "https://qdeskio.vercel.app/"
-  },
+  }
+  ,
   {
     "name": "qFix",
     "url": "https://qfixtracking.vercel.app/"
   
-  },
-  {
-    "name": "qKiosk POS",
-    "url": "https://qkioskpos.vercel.app/"
-  },
+  }
+  ,
   {
     "name": "WebMedia",
     "url": "https://webmediaconverter.vercel.app/"
-  },
+  }
+  ,
   {
-    "name": "Lighthouse",
-    "url": "https://quevenrecorte.github.io/lighthouse"
-  },
+    "name": "Undupe",
+    "url": "https://undupe.vercel.app/"
+  }
+  ,
   {
     "name": "Hermes",
     "url": "https://quevenrecorte.github.io/hermes"
+  }
+  ,
+  {
+    "name": "qKiosk POS",
+    "url": "https://qkioskpos.vercel.app/"
+  }
+  ,
+  {
+    "name": "Lighthouse",
+    "url": "https://quevenrecorte.github.io/lighthouse"
   }
 ]
