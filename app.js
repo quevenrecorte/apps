@@ -17,6 +17,7 @@ const APP_ICONS = {
   'qDeskio':       { icon: '📋', label: 'PMS'  },
   'qFix':       { icon: '🔧', label: 'REP'  },
   'qSpend':       { icon: '💵', label: 'FIN'  },
+  'WebMedia':       { icon: '💾', label: 'MEDIA'  },
 };
 
 const SERVER_ICONS = {
