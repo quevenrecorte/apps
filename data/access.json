@@ -32,6 +32,11 @@
   }
   ,
   {
+    "name": "[Seer] GameServer",
+    "url": "http://100.119.153.92:4000/"
+  }
+  ,
+  {
     "name": "[Seer] HomeServer",
     "url": "http://homeserver:4000"
   },
