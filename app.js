@@ -12,12 +12,12 @@ const APP_ICONS = {
   'Hermes':         { icon: '📩', label: 'MAIL' },
   'Aegis':          { icon: '🔐', label: 'SEC'  },
   'Agentic':        { icon: '🤖', label: 'AI'   },
-  'SeerLink':       { icon: '📱', label: 'MOB'  },
+  'SeerLink':       { icon: '📱', label: 'REM'  },
   'qKiosk POS':       { icon: '🛒', label: 'BMS'  },
-  'qDeskio':       { icon: '📋', label: 'PMS'  },
+  'qDeskio':       { icon: '📋', label: 'PMT'  },
   'qFix':       { icon: '🔧', label: 'REP'  },
   'qSpend':       { icon: '💵', label: 'FIN'  },
-  'WebMedia':       { icon: '🎞️', label: 'MEDIA'  },
+  'WebMedia Optimizer':       { icon: '🎞️', label: 'OPT'  },
   'Undupe':         { icon: '📂', label: 'FILE'  },
 };
 
